@@ -1,0 +1,87 @@
+*{
+  background-color: black;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  color: rgb(6, 28, 8);
+  font-size: 40px;
+  padding-bottom: 20px;
+
+}
+
+.crypto-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+  padding: 50px;
+  
+  
+}
+
+.crypto-card{
+  background-color:rgb(13, 25, 11);
+  font-size: 20px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  align-content: center;
+  border: 1px solid rgb(13, 39, 17);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 4px rgb(24, 37, 26);
+  cursor: pointer;
+}
+
+.crypto-card:hover{
+   transform: translateY(-5px);
+}
+
+.crypto-card p{
+  background-color:rgb(13, 25, 11);
+  color: rgb(27, 255, 6);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.crypto-card h3{
+  background-color:rgb(13, 25, 11);
+  color: white;
+  font-size: 18px;
+}
+
+.errorP{
+text-align: center;
+color: rgb(255, 0, 0);
+font-weight: bold;
+}
+
+.loadingP{
+  text-align: center;
+  color: rgb(251, 247, 2);
+  font-weight: bold;
+}
+
+.loadedP{
+  text-align: center;
+  color: rgb(27, 255, 6);
+  font-weight: bold;
+}
+
+.button-div{
+  text-align: center;
+}
+
+.manualFetch{
+ margin-right: 20px;
+}
+
+button{
+  background-color:rgb(13, 25, 11);
+  border: 1px solid rgb(13, 39, 17);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 4px rgb(24, 37, 26);
+  cursor: pointer;
+  color: rgb(27, 255, 6);
+  font-weight: bold;
+}
