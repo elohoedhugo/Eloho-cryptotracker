@@ -7,6 +7,7 @@ import {
 } from "../store/trackerSlice";
 import { useSelector, useDispatch } from "react-redux";
 import "./tracker.css";
+import { COINCAP_API_KEY } from "../config";
 
 const Tracker = () => {
   const { prices, error, loading, isUpdating } = useSelector(
@@ -28,14 +29,15 @@ const Tracker = () => {
     "litecoin",
     "toncoin",
   ];
-
+  
+   const apiKey = COINCAP_API_KEY
   const socketRef = useRef(null);
 
   useEffect(() => {
     if (!isUpdating) return;
 
     socketRef.current = new WebSocket(
-      `wss://wss.coincap.io/prices?assets=${cryptos.join(",")}`
+      `wss://wss.coincap.io/prices?assets=${cryptos.join(",")}&apiKey=${apiKey}`
     );
     sendAction(setLoading(true));
 

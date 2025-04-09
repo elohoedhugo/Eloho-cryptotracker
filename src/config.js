@@ -1,0 +1,1 @@
+export const COINCAP_API_KEY = import.meta.env.VITE_COINDESK_API_KEY
