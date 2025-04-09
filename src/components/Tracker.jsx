@@ -35,7 +35,7 @@ const Tracker = () => {
     if (!isUpdating) return;
 
     socketRef.current = new WebSocket(
-      `wss://ws.coincap.io/prices?assets=${cryptos.join(",")}`
+      `wss://wss.coincap.io/prices?assets=${cryptos.join(",")}`
     );
     sendAction(setLoading(true));
 
