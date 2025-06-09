@@ -70,7 +70,7 @@ const Tracker = () => {
     sendAction(setError(null));
 
     const tempSocket = new WebSocket(
-      `wss://ws.coincap.io/prices?assets=${cryptos.join(",")}`
+      `wss://wss.coincap.io/prices?assets=${cryptos.join(",")}&apiKey=${apiKey}`
     );
 
     tempSocket.onmessage = (event) => {
